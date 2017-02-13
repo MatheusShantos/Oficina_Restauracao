@@ -6,6 +6,7 @@
 package br.com.offcina.control.util;
 
 import br.com.offcina.control.cargo.CargoJpaController;
+import br.com.offcina.control.equipe.EquipeJpaController;
 
 /**
  *
@@ -13,12 +14,20 @@ import br.com.offcina.control.cargo.CargoJpaController;
  */
 public class JPAControllerFactory {
 
-    private static CargoJpaController cargoController;
+    private static CargoJpaController cargoController = null;
+    private static EquipeJpaController equipeController = null;
 
     public static CargoJpaController cargoController() {
         if (cargoController == null) {
             cargoController = new CargoJpaController(JPAUtil.entityManagerFactory());
         }
         return cargoController;
+    }
+    public static EquipeJpaController equipeController(){
+        if(equipeController == null){
+            equipeController = new EquipeJpaController(JPAUtil.entityManagerFactory());
+            
+        }
+        return equipeController;
     }
 }

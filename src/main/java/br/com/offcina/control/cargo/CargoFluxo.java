@@ -18,8 +18,8 @@ import javafx.stage.Stage;
  */
 public class CargoFluxo {
 
-    private static Stage stage;
-    private static CargoFluxo fluxo;
+    private static Stage stage = null;
+    private static CargoFluxo fluxo = null;
 
     public CargoFluxo() {
         if (stage == null) {

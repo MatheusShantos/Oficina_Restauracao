@@ -68,6 +68,15 @@ public class CargoListFXMLController implements Initializable {
         } catch (IOException ex) {
             Logger.getLogger(CargoListFXMLController.class.getName()).log(Level.SEVERE, null, ex);
         }
+        
+    }
+    @FXML
+    public void handleNovo(){
+        try {
+            CargoFluxo.fluxo().carregaCadastro();
+        } catch (IOException ex) {
+            Logger.getLogger(CargoListFXMLController.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
 }

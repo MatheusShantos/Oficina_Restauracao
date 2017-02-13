@@ -2,14 +2,34 @@
 
 <?import java.net.URL?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.offcina.control.MainFXMLController">
-    <stylesheets>
-        <URL value="@/styles/Styles.css" />
-    </stylesheets>
-   <children>
-      <Button layoutX="132.0" layoutY="99.0" mnemonicParsing="false" onAction="#handleCargoListar" text="Listar" />
-      <Button layoutX="132.0" layoutY="140.0" mnemonicParsing="false" onAction="#handleCargoCadastrar" text="Cadastrar" />
-   </children>
-</AnchorPane>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.offcina.control.MainFXMLController">
+   <center>
+      <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass">
+          <stylesheets>
+              <URL value="@/styles/Styles.css" />
+          </stylesheets>
+         <children>
+            <Button layoutX="132.0" layoutY="99.0" mnemonicParsing="false" onAction="#handleCargoListar" text="Listar" />
+            <Button layoutX="132.0" layoutY="140.0" mnemonicParsing="false" onAction="#handleCargoCadastrar" text="Cadastrar" />
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Equipe">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleEquipeListar" text="Listar" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>

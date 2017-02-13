@@ -6,6 +6,7 @@
 package br.com.offcina.control;
 
 import br.com.offcina.control.cargo.CargoFluxo;
+import br.com.offcina.control.equipe.EquipeFluxo;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -38,6 +39,15 @@ public class MainFXMLController implements Initializable {
         } catch (IOException ex) {
             Logger.getLogger(MainFXMLController.class.getName()).log(Level.SEVERE, null, ex);
         }
+    }
+    @FXML
+    public void handleEquipeListar(){
+        try {
+            EquipeFluxo.fluxo().carregaListar();
+        } catch (IOException ex) {
+            Logger.getLogger(MainFXMLController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
     }
 
     @FXML

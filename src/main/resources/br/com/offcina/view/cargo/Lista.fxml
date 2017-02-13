@@ -33,7 +33,7 @@
                 <Button fx:id="handleAtualizaTabela" mnemonicParsing="false" text="Atualizar" />
                   <Button mnemonicParsing="false" text="Visualizar" />
                   <Button mnemonicParsing="false" text="Excluir" />
-                  <Button mnemonicParsing="false" text="Novo" />
+                  <Button mnemonicParsing="false" onAction="#handleNovo" text="Novo" />
                   <Button mnemonicParsing="false" onAction="#handleEditar" text="Editar" />
               </buttons>
                <padding>

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.com.offcina.control;
+package br.com.offcina.control.equipe;
 
 import br.com.offcina.control.exceptions.IllegalOrphanException;
 import br.com.offcina.control.exceptions.NonexistentEntityException;

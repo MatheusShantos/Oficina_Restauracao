@@ -120,5 +120,5 @@ public class Cargo implements Serializable {
     public String toString() {
         return "br.com.offcina.model.Cargo[ id=" + id + " ]";
     }
-    
+
 }
