@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="OFFCINA_PU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>br.model.Orcamento</class>
+    <class>br.model.Funcionario</class>
+    <class>br.model.Cargo</class>
+    <class>br.model.Objeto</class>
+    <class>br.model.TipoProjeto</class>
+    <class>br.model.FuncionarioEquipe</class>
+    <class>br.model.Proprietario</class>
+    <class>br.model.Equipe</class>
+    <class>br.model.Projeto</class>
+    <class>br.com.offcina.model.Cargo</class>
+    <class>br.com.offcina.model.FuncionarioEquipe</class>
+    <class>br.com.offcina.model.Funcionario</class>
+    <class>br.com.offcina.model.Proprietario</class>
+    <class>br.com.offcina.model.Equipe</class>
+    <class>br.com.offcina.model.Projeto</class>
+    <class>br.com.offcina.model.TipoProjeto</class>
+    <class>br.com.offcina.model.Objeto</class>
+    <class>br.com.offcina.model.Orcamento</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://192.168.1.156:5432/OficinaRestauracao"/>
+      <property name="javax.persistence.jdbc.user" value="development"/>
+      <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="development"/>
+    </properties>
+  </persistence-unit>
+</persistence>
