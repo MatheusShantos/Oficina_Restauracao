@@ -21,10 +21,10 @@
     <class>br.com.offcina.model.Objeto</class>
     <class>br.com.offcina.model.Orcamento</class>
     <properties>
-      <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://192.168.1.156:5432/OficinaRestauracao"/>
-      <property name="javax.persistence.jdbc.user" value="development"/>
+      <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/OficinaRestauracao:5432"/>
+      <property name="javax.persistence.jdbc.user" value="postgres"/>
       <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
-      <property name="javax.persistence.jdbc.password" value="development"/>
+      <property name="javax.persistence.jdbc.password" value="Vingados7vezes"/>
     </properties>
   </persistence-unit>
 </persistence>

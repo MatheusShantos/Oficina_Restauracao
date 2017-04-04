@@ -5,8 +5,6 @@
  */
 package br.com.offcina.control.equipe;
 
-import br.com.offcina.control.cargo.CargoFluxo;
-import br.com.offcina.control.cargo.CargoListFXMLController;
 import br.com.offcina.control.util.JPAControllerFactory;
 import br.com.offcina.model.Equipe;
 import java.io.IOException;
@@ -21,11 +19,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 
-/**
- * FXML Controller class
- *
- * @author israel
- */
+
 public class EquipeListarFXMLController implements Initializable {
     
       @FXML

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="400.0" minWidth="850.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <ScrollPane prefHeight="277.0" prefWidth="850.0" BorderPane.alignment="CENTER">
+         <content>
+            <TableView prefHeight="286.0" prefWidth="849.0">
+              <columns>
+                <TableColumn prefWidth="176.0" text="Nome" />
+                <TableColumn prefWidth="82.0" text="Sexo" />
+                  <TableColumn prefWidth="93.0" text="Nacimento" />
+                  <TableColumn prefWidth="116.0" text="Cargo" />
+                  <TableColumn prefWidth="117.0" text="RG" />
+                  <TableColumn prefWidth="109.0" text="CPF" />
+                  <TableColumn prefWidth="117.0" text="Carteira" />
+              </columns>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </TableView>
+         </content>
+      </ScrollPane>
+   </center>
+</BorderPane>

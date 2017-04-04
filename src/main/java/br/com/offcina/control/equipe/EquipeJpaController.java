@@ -19,10 +19,7 @@ import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 
-/**
- *
- * @author israel
- */
+
 public class EquipeJpaController implements Serializable {
 
     public EquipeJpaController(EntityManagerFactory emf) {

@@ -7,10 +7,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-/**
- *
- * @author israel
- */
+
 public class EquipeFluxo {
     
     private static Stage stage = null;

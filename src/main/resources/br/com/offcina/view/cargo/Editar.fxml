@@ -25,9 +25,9 @@
             <RowConstraints minHeight="10.0" prefHeight="219.0" vgrow="ALWAYS" />
         </rowConstraints>
          <children>
-            <Label fx:id="labelId" text="cargo:id" />
-            <Label text="Nome" GridPane.rowIndex="1" />
-            <Label text="Descriçao" GridPane.rowIndex="3" />
+            <Label fx:id="labelId" text="Cargo ID:" />
+            <Label text="Nome:" GridPane.rowIndex="1" />
+            <Label text="Descrição:" GridPane.rowIndex="3" />
             <TextField fx:id="textFieldNome" GridPane.rowIndex="2" />
             <TextArea fx:id="textAreaDescricao" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="4" />
          </children>

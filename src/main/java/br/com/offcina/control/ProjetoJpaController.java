@@ -16,6 +16,7 @@ import br.com.offcina.model.Objeto;
 import br.com.offcina.model.TipoProjeto;
 import br.com.offcina.model.Orcamento;
 import br.com.offcina.model.Projeto;
+import br.com.offcina.model.Proprietario;
 import java.util.ArrayList;
 import java.util.List;
 import javax.persistence.EntityManager;
@@ -262,6 +263,10 @@ public class ProjetoJpaController implements Serializable {
         } finally {
             em.close();
         }
+    }
+
+    public void edit(Proprietario proprietario) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }

@@ -18,7 +18,7 @@ public class JPAUtil {
     
 
     public static EntityManagerFactory entityManagerFactory() {
-        if(factory==null){
+        if(factory == null){
             factory = Persistence.createEntityManagerFactory("OFFCINA_PU");
         }
         return factory;

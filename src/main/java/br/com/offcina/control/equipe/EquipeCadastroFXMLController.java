@@ -1,14 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package br.com.offcina.control.equipe;
 
-import br.com.offcina.control.cargo.CargoCadastroFXMLController;
-import br.com.offcina.control.cargo.CargoFluxo;
 import br.com.offcina.control.util.JPAControllerFactory;
-import br.com.offcina.model.Cargo;
 import br.com.offcina.model.Equipe;
 import java.io.IOException;
 import java.net.URL;
@@ -21,17 +14,11 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
-/**
- * FXML Controller class
- *
- * @author israel
- */
+
 public class EquipeCadastroFXMLController implements Initializable {
 
-    /**
-     * Initializes the controller class.
-     */
-     @FXML
+   
+    @FXML
     private TextArea textAreaDescricao;
 
     @FXML
@@ -39,7 +26,6 @@ public class EquipeCadastroFXMLController implements Initializable {
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
     }    
     
     @FXML
@@ -56,7 +42,7 @@ public class EquipeCadastroFXMLController implements Initializable {
             EquipeFluxo.fluxo().carregaListar();
             
         } catch (IOException ex) {
-            Logger.getLogger(CargoCadastroFXMLController.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(EquipeCadastroFXMLController.class.getName()).log(Level.SEVERE, null, ex);
         }
 
     }
