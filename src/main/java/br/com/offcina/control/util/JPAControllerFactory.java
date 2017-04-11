@@ -66,6 +66,10 @@ public class JPAControllerFactory {
         }
         return funcionarioController;
     }
+
+    public static Object orcamentoController() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 
 }

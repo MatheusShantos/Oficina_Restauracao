@@ -50,8 +50,8 @@ public class ProprietarioEditarFXMLController implements Initializable {
    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
- 
     }  
+    
     public Proprietario getProprietario(){
         return proprietario;
     }
@@ -65,7 +65,7 @@ public class ProprietarioEditarFXMLController implements Initializable {
         textFieldNome.setText(proprietario.getNome());
         textFieldRG.setText(proprietario.getRg());
         textFieldCPF.setText(proprietario.getCpf());
-        //textFieldNascimento.setText(proprietario.getNascimento());
+        textFieldNascimento.setText(proprietario.getNascimento());
         textFieldEmail.setText(proprietario.getEmails());
         textFieldEstado.setText(proprietario.getEstado());
         textFieldEndereco.setText(proprietario.getEndereco());
@@ -77,7 +77,7 @@ public class ProprietarioEditarFXMLController implements Initializable {
         proprietario.setNome(textFieldNome.getText());
         proprietario.setRg(textFieldRG.getText());
         proprietario.setCpf(textFieldCPF.getText());
-        // proprietario.setNascimento(textFieldNascimento.getText());
+        proprietario.setNascimento(textFieldNascimento.getText());
         proprietario.setEmails(textFieldEmail.getText());
         proprietario.setEstado(textFieldEstado.getText());
         proprietario.setCidade(textFieldCidade.getText());
@@ -91,6 +91,8 @@ public class ProprietarioEditarFXMLController implements Initializable {
             escreveProprietario();
             JPAControllerFactory.projetoController().edit(proprietario);
             ProprietarioFluxo.fluxo().carregaListar();
+        } catch (NonexistentEntityException ex) {
+            Logger.getLogger(ProprietarioEditarFXMLController.class.getName()).log(Level.SEVERE, null, ex);
         } catch (Exception ex) {
             Logger.getLogger(ProprietarioEditarFXMLController.class.getName()).log(Level.SEVERE, null, ex);
         }
